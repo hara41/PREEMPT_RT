@@ -1,0 +1,30 @@
+# Ignore build outputs and large binary artifacts
+rpi_rt_output/
+rpi5_rt_output/
+*.img
+*.dtb
+initramfs*
+*.bin
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Logs and temp
+*.log
+tmp/
+
+# Node / others
+node_modules/
+
+# Git LFS placeholder: if you want to track large binaries, enable Git LFS and track specific patterns
+# git lfs install
+# git lfs track "*.img"
