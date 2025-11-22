@@ -4,6 +4,8 @@
 
 このプロジェクトは、[Qiita 記事「【たぶん一番簡単】ほぼスクリプトでRaspberry Piのリアルタイムカーネル導入」](https://qiita.com/ring2/items/7a7fc00280f4e8ba6990)に基づき、Raspberry Pi 4 に mainline PREEMPT_RT カーネル（6.12.58+）を導入するプロセスをドキュメント化したものです。
 
+このドキュメントの作成も含めてGithub Copilot
+
 ## 環境
 
 - **開発環境**: WSL 上の Ubuntu 24.04
@@ -23,6 +25,14 @@ pi4_64/
       ├── boot/               # カーネルイメージ、DTB、overlays
       └── modules/lib/modules # カーネルモジュール
 ```
+## Qiita記事より作成したファイル
+
+これらのファイルは記事のままです。
+
+1. `Dockerfile`
+2. `build_rt_kernel.sh`
+3. `install_rt_kernel.sh`
+
 
 ## 実装したファイル
 
@@ -203,6 +213,8 @@ T: 0 ( 1806) P:80 I:1000 C:  10000 Min:      3 Act:   22 Avg:   14 Max:      52
 
 ## トラブルシューティング
 
+＊作者が
+
 ### 問題: SCP でシンボリックリンクエラー
 **原因**: Docker のビルド時に生成された symlink が WSL 環境で無効
 
@@ -254,6 +266,14 @@ find ./rpi_rt_output/modules -type l -delete
 ✅ Docker を使った再現性のあるクロスビルド  
 
 新しいカーネルバージョンが必要な場合は、`Dockerfile` の `--branch rpi-6.12.y` を別のブランチ（例: `rpi-6.13.y`）に変更してビルドプロセスを繰り返すだけです。
+
+
+## 謝辞
+### Github Copilot
+ほとんどのトラブルはすべて解決してくれました。
+自力でやっていた前回に対して、1時間ほどで動作までたどり着けたのはCopilotのおかげです。
+
+### Raspberry Pi 財団
 
 ---
 
