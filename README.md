@@ -4,7 +4,7 @@
 
 このプロジェクトは、[Qiita 記事「【たぶん一番簡単】ほぼスクリプトでRaspberry Piのリアルタイムカーネル導入」](https://qiita.com/ring2/items/7a7fc00280f4e8ba6990)に基づき、Raspberry Pi 4 に mainline PREEMPT_RT カーネル（6.12.58+）を導入するプロセスをドキュメント化したものです。
 
-このドキュメントの作成も含めてGithub Copilot
+このドキュメントの作成も含めてGithub Copilotの支援で作成しました。
 
 ## 環境
 
