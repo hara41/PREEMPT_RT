@@ -58,6 +58,12 @@ scripts/config --enable CONFIG_NO_HZ_FULL
 
 ## ビルドプロセス
 
+下記のスクリプトを実行することで、ステップ1と2は自動で進みます。
+``` bash
+./run_docker.sh
+```
+
+
 ### ステップ 1: Docker イメージのビルド
 
 ```bash
