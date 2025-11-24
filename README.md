@@ -213,7 +213,11 @@ T: 0 ( 1806) P:80 I:1000 C:  10000 Min:      3 Act:   22 Avg:   14 Max:      52
 
 ## トラブルシューティング
 
-＊作者が
+### 問題: docker_build.shが見当たらない
+
+これがないとビルドが実行できないので作成しました。
+
+
 
 ### 問題: SCP でシンボリックリンクエラー
 **原因**: Docker のビルド時に生成された symlink が WSL 環境で無効
@@ -269,6 +273,11 @@ find ./rpi_rt_output/modules -type l -delete
 
 
 ## 謝辞
+
+### [Qiita 記事「【たぶん一番簡単】ほぼスクリプトでRaspberry Piのリアルタイムカーネル導入」](https://qiita.com/ring2/items/7a7fc00280f4e8ba6990)
+
+もう完成している。ありがたい。
+
 ### Github Copilot
 ほとんどのトラブルはすべて解決してくれました。
 自力でやっていた前回に対して、1時間ほどで動作までたどり着けたのはCopilotのおかげです。

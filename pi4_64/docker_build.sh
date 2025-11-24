@@ -5,6 +5,8 @@ set -euo pipefail
 # a mainline PREEMPT_RT kernel for Raspberry Pi (4/5) and copies
 # the build outputs to the host-mounted `/output` directory.
 
+# このスクリプトはCopilotが作成しました
+
 export ARCH=${ARCH:-arm64}
 export CROSS_COMPILE=${CROSS_COMPILE:-aarch64-linux-gnu-}
 KERNEL=${KERNEL:-kernel8}
