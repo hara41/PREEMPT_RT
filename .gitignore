@@ -1,4 +1,6 @@
 # Ignore build outputs and large binary artifacts
+boot/
+modules/
 rpi_rt_output/
 rpi5_rt_output/
 *.img
